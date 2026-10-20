@@ -1,12 +1,16 @@
 # Linux Uninstaller
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-Contributor%20Covenant-ff69b4.svg)](CODE_OF_CONDUCT.md)
+
 A comprehensive Linux app uninstaller that removes applications **and** their leftover cache, config, temp, and data files — in one step. Ships as a **premium desktop app** (a local web UI opened in its own app window) plus a full CLI and terminal UI.
 
 Most Linux package managers remove the binaries but leave behind `~/.cache`, `~/.config`, `~/.local/share`, and other orphaned files. This tool scans for those leftovers, shows you exactly what they are, and cleans them up safely.
 
 ## Features
 
-- **Premium desktop app** — a locally-served web UI (pure HTML/CSS/JS, no frameworks) launched as a native Chromium/Firefox app window: aurora background, glassmorphism panels, 3D tilt cards, live search over all package managers.
+- **Premium desktop app** — a locally-served web UI (pure HTML/CSS/JS, no frameworks) launched as a native Chromium/Firefox app window: clean flat-dark design, live search over all package managers.
 - **Uninstall + Clean in one step** — removes the package via the package manager, then finds and deletes leftover files.
 - **Leftover scanner** — finds orphaned app data across `~/.config`, `~/.local/share`, `~/.cache`, `/var`, `/opt`, and more.
 - **Multi-package-manager support** — automatically detects and uses whichever is available:
@@ -165,8 +169,8 @@ Uninstaller/
 │   ├── webapp.py            # launches the UI as a browser app window
 │   ├── webui/
 │   │   ├── index.html       # premium UI structure
-│   │   ├── style.css        # aurora/glass/3D design system
-│   │   └── app.js           # SPA logic, API calls, tilt effect
+│   │   ├── style.css        # flat dark design system
+│   │   └── app.js           # SPA logic, API calls
 │   ├── backends/
 │   │   ├── __init__.py      # backend registry
 │   │   ├── base.py          # Backend ABC, data classes
@@ -192,6 +196,10 @@ Uninstaller/
 ├── test_self.py             # CLI/core self-tests
 ├── test_gui_shots.py        # GUI screenshot smoke test
 ├── pyproject.toml
+├── LICENSE
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── SECURITY.md
 └── README.md
 ```
 
@@ -201,6 +209,17 @@ Uninstaller/
 ./uninstall.sh
 ```
 
+## Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for
+setup, style guidelines, and PR expectations, and note that this project follows
+a [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Security
+
+Found a vulnerability? Please report it privately — see [SECURITY.md](SECURITY.md).
+Do not open a public issue for security reports.
+
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE).
