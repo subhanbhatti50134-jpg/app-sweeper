@@ -4,6 +4,8 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-Contributor%20Covenant-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
+![Screenshot of the app-sweeper interface](docs/images/app-sweeper.png)
+
 A comprehensive Linux app uninstaller that removes applications **and** their leftover cache, config, temp, and data files — in one step. Ships as a **premium desktop app** (a local web UI opened in its own app window) plus a full CLI and terminal UI.
 
 Most Linux package managers remove the binaries but leave behind `~/.cache`, `~/.config`, `~/.local/share`, and other orphaned files. This tool scans for those leftovers, shows you exactly what they are, and cleans them up safely.
