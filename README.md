@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-Contributor%20Covenant-ff69b4.svg)](CODE_OF_CONDUCT.md)
+[![CI](https://github.com/subhanbhatti50134-jpg/app-sweeper/actions/workflows/ci.yml/badge.svg)](https://github.com/subhanbhatti50134-jpg/app-sweeper/actions/workflows/ci.yml)
 
 ![Screenshot of the app-sweeper interface](docs/images/app-sweeper.png)
 
